@@ -19,27 +19,11 @@ import sources  # HEADERS
 
 API = "https://api.shodan.io"
 
-# User-supplied keys (0 query credits, scan credits available; edu key has 65k+).
-KEYS = [
-    "3tj9ovMyEtTxhWOhTiEK4GcwNkVSj3B8",  # edu, 65k+ scan
-    "OefcMxcunkm72Po71vVtX8zUN57vQtAC",
-    "PSKINdQe1GyxGgecYz2191H2JoS9qvgD",
-    "pHHlgpFt8Ka3Stb5UlTxcaEwciOeF2QM",
-    "61TvA2dNwxNxmWziZxKzR5aO9tFD00Nj",
-    "xTbXXOSBr0R65OcClImSwzadExoXU4tc",
-    "EJV3A4Mka2wPs7P8VBCO6xcpRe27iNJu",
-    "Jvt0B5uZIDPJ5pbCqMo12CqD7pdnMSEd",
-    "rl89iPZ0hf7oVDyjz7jCHf65qEVKwawm",
-    "uWlAoYQLXeFPP0BHM7Jca0hUYyr57gf1",
-    "epUwsq69bGZwhaFsiHYCnyvO3mWcXatU",
-    "7XRdrUMb9i2N6P6rqyXIM3PyDGBl6Wyg",
-    "Z2soDBnFLLNRKZsamG9hUQLtBBh9GTwH",
-    "mmNAl4hUHApCF27NlqHh79W8mYMH8GKT",
-    "XSDjF1VpKNImZxAveSnnJuSrWW7sbBFs",
-    "2sWQ6joUfopOtzQRSYW6JSs9tqeoiaqa",
-    "qBA6erhzKJWy2L51g0FjgbYo4PI2vYwD",
-    "bIWOjW69QxF96gvhb4a1vNN7JgyjPYQ4",
-]
+# Shodan API keys are loaded from env — never hardcoded.
+#   SHODAN_KEYS     — comma-separated pool (recommended for rotation)
+#   SHODAN_API_KEY  — single key (used in addition to SHODAN_KEYS, see _keys())
+# See .env.example for the template.
+KEYS = [k.strip() for k in os.environ.get("SHODAN_KEYS", "").split(",") if k.strip()]
 
 _bad: set[str] = set()   # keys that returned 401/403 (invalid)
 
