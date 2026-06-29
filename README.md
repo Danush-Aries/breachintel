@@ -1,3 +1,22 @@
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,30:7e22ce,70:ff006e,100:00ffff&text=BREACHINTEL&fontSize=68&fontColor=ffffff&animation=fadeIn&desc=14-Source+OSINT+%C2%B7+Breach+%C2%B7+Ransomware+%C2%B7+Dark+Web&descAlignY=80&descSize=16" width="100%" alt="BreachIntel"/>
+</div>
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Shodan](https://img.shields.io/badge/Shodan-FC0226?style=for-the-badge&logo=shodan&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-00ff41?style=for-the-badge)
+
+**18 REST endpoints · 14 OSINT feeds · 10-tab investigator GUI · One FastAPI server.**
+
+</div>
+
+---
+
 # BreachIntel — All-Source Intelligence Terminal
 
 Enter a website → get **every** breach, leak, ransomware listing, infostealer
