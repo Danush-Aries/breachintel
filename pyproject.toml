@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breachintel"
+version = "1.0.0"
+description = "All-source OSINT terminal — 18 REST endpoints, 14 OSINT sources, 10-tab investigator GUI with live threat map"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "requests[socks]>=2.31",
+  "rich>=13.7",
+  "textual>=0.60",
+  "beautifulsoup4>=4.12",
+  "playwright>=1.44",
+  "fastapi>=0.110",
+  "uvicorn>=0.29",
+  "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+
+[project.scripts]
+breachintel = "breachintel:main"
+
+[tool.setuptools]
+packages = ["breachintel"]
