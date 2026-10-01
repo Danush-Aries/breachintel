@@ -1,2 +1,0 @@
-[console_scripts]
-breachintel = breachintel:main
