@@ -2,8 +2,6 @@
 
 > **18 REST endpoints. 14 OSINT sources. 10-tab investigator GUI with a live global threat map. One `./start.sh`.**
 
-<p align="center"><img src="assets/hero.gif" alt="BreachIntel dashboard — global intel terminal" width="720"></p>
-
 <p align="center">
   <img src="https://img.shields.io/github/actions/workflow/status/Danush-Aries/breachintel/ci.yml?branch=main&style=flat-square" alt="build">
   <img src="https://img.shields.io/badge/license-MIT-00ff41?style=flat-square" alt="license">
@@ -42,12 +40,6 @@ python3 breachintel.py example.com --watch         # continuous monitoring
 - **Shodan key pool (`shodanpool.py`)** — rotates keys; even 0-credit keys still power `/host/{ip}` and `/host/count` (both free), which is enough for the geo layers.
 - **Playwright-driven forum + Tor scraping (`forums.py`)** — respects a status sidebar (online/offline/seized + `.onion` reachability) so you don't hammer dead sites.
 - **Local recon tools auto-detected** — nmap, subfinder, httpx, nuclei, katana, whatweb, wafw00f, theHarvester, sherlock; each surfaces `installed: false` cleanly instead of failing.
-
-## Screenshots
-
-| Operation dashboard | Breach Intel tab | Radar (global threat map) | Ransomware mirror |
-|---|---|---|---|
-| ![](assets/screenshot-1.png) | ![](assets/screenshot-2.png) | ![](assets/screenshot-3.png) | ![](assets/screenshot-4.png) |
 
 ## The web app (left-sidebar navigation)
 
@@ -119,7 +111,6 @@ MIT — see [LICENSE](./LICENSE). **UNCLASSIFIED // FOR AUTHORIZED USE ONLY.**
 - [computer-use-agent](https://github.com/Danush-Aries/computer-use-agent) — Claude drives your desktop via VNC
 - [browser-automation-agent](https://github.com/Danush-Aries/browser-automation-agent) — Claude drives Playwright
 - [blinkchat](https://github.com/Danush-Aries/blinkchat) — realtime chat with vibes
-
 
 ---
 
