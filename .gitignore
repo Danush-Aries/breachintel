@@ -7,3 +7,4 @@ node_modules/
 *.log
 *.db
 *.sqlite3
+*.egg-info/
